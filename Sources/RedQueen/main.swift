@@ -1,31 +1,12 @@
-class Automation{
-    func openAutomation(type: AutomationType){
-        type.openAutomation()
-    }
-}
-    
-protocol AutomationType{
-    func openAutomation() -> Void
-}
-    
-class WebSiteAutomation : AutomationType{
-    func openAutomation() {
-        print("Opening the website...")
-    }
-}
-    
-class LightsHouseAutomation : AutomationType{
-    func openAutomation() {
-        print("Opening The Lights house")
-    }
-}
-    
-class OpenRefrigeratorAutomation : AutomationType{
-    func openAutomation() {
-        print("Opening the refrigerator")
-    }
+import Foundation
+
+var voiceRecognizedPhrase = "Open the lights"
+
+let voiceChosenAutomation = chosenAutomation[voiceRecognizedPhrase.lowercased()]
+
+if let automationToRun = voiceChosenAutomation{
+    let automation = Automation()
+    automation.openAutomation(type: automationToRun)
 }
 
 
-let automation = Automation()
-automation.openAutomation(type: WebSiteAutomation())
