@@ -1,9 +1,9 @@
 import Foundation
 
-var chosenAutomation : [String : AutomationType] = [
-    "open website" : WebSiteAutomation(),
-    "open the lights": LightsHouseAutomation(),
-    "open refrigerator": OpenRefrigeratorAutomation()
+var chosenAutomation : [Int : AutomationType] = [
+    1 : WebSiteAutomation(),
+    2 : LightsHouseAutomation(),
+    3 : OpenRefrigeratorAutomation()
 ]
 
 
