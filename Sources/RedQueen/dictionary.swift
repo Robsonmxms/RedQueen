@@ -5,6 +5,3 @@ var chosenAutomation : [Int : AutomationType] = [
     2 : LightsHouseAutomation(),
     3 : OpenRefrigeratorAutomation()
 ]
-
-
-
