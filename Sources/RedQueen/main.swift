@@ -1,8 +1,8 @@
 import Foundation
 
-main()
+myQueen()
 
-func main(){
+public func myQueen(){
     var isKeepLooping = true
 
     while isKeepLooping{
@@ -14,16 +14,24 @@ func main(){
 func buildingHeader()
 {
     print("""
-            \n\nGerenciador de automações
+            \n\nRed Queen
 
-    Escolha uma das opções abaixo:
-
-    [1] Abrir Site
-    [2] Acender as luzes
-    [3] Abrir refrigerador
-
-    Ou pressione qualquer outra tecla para encerrar
+    I control everything,
+    choose one of the automation options that I will run
+    
     """)
+    
+    buildingOptions()
+
+    print("\nOr press any other key to end execution")
+    
+}
+
+func buildingOptions(){
+    for key in chosenAutomation.keys{
+        let value = chosenAutomation[key]
+        print("[",key,"]\t ",value!)
+    }
 }
 
 func isChoosingAutomation() -> Bool{
@@ -45,15 +53,15 @@ func isChoosingAutomation() -> Bool{
 
 func isBuildingAutomation(chosenHeaderOption : Int) -> Bool {
     let chosenOptionAutomation = chosenAutomation[chosenHeaderOption]
-    var isBuilded = false
+    var wasBuilded = false
     
     if let automationToRun = chosenOptionAutomation{
         let automation = Automation()
         automation.openAutomation(type: automationToRun)
-        isBuilded = true
+        wasBuilded = true
     }
     
-    return isBuilded
+    return wasBuilded
 }
 
 
