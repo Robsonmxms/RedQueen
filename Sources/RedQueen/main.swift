@@ -7,7 +7,7 @@ func main(){
 
     while isKeepLooping{
         buildingHeader()
-        isKeepLooping = keepChoosingAutomation()
+        isKeepLooping = isChoosingAutomation()
     }
 }
 
@@ -26,34 +26,36 @@ func buildingHeader()
     """)
 }
 
-func keepChoosingAutomation() -> Bool{
+func isChoosingAutomation() -> Bool{
     
-    var isKeepChoosingAutomation = false
+    var wasChosen = false
     
-    if let readInput = readLine()
-    {
-        if let chosenHeaderOption = Int(readInput)
-        {
-            isKeepChoosingAutomation = buildingAutomation(
-                chosenHeaderOption: chosenHeaderOption
-            )
-        }
+    let readInput = readLine()
+    
+    guard let chosenHeaderOption = Int(readInput!)else{
+        return wasChosen
     }
-    return isKeepChoosingAutomation
+    
+    wasChosen = isBuildingAutomation(
+        chosenHeaderOption: chosenHeaderOption
+    )
+        
+    return wasChosen
 }
 
-func buildingAutomation(chosenHeaderOption : Int) -> Bool {
+func isBuildingAutomation(chosenHeaderOption : Int) -> Bool {
     let chosenOptionAutomation = chosenAutomation[chosenHeaderOption]
-    var isbuilded = false
+    var isBuilded = false
     
     if let automationToRun = chosenOptionAutomation{
         let automation = Automation()
         automation.openAutomation(type: automationToRun)
-        isbuilded = true
+        isBuilded = true
     }
     
-    return isbuilded
+    return isBuilded
 }
+
 
 
 
