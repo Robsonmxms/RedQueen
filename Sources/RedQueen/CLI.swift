@@ -1,11 +1,15 @@
 import Foundation
+import Commands
 
-class CLI {
+public class CLI {
     
-    func run(){
+    public init() {}
+    
+    public func run(){
         var isKeepLooping = true
 
         while isKeepLooping{
+            Commands.Bash.system("clear")
             buildingHeader()
             isKeepLooping = isChoosingAutomation()
         }

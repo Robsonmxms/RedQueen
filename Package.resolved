@@ -18,6 +18,15 @@
           "revision": "82905286cc3f0fa8adc4674bf49437cab65a8373",
           "version": "1.1.1"
         }
+      },
+      {
+        "package": "swift-commands",
+        "repositoryURL": "https://github.com/QiuZhiFei/swift-commands.git",
+        "state": {
+          "branch": null,
+          "revision": "0883a0383038c41b398945b2e6fd233baaacc394",
+          "version": "0.6.0"
+        }
       }
     ]
   },
