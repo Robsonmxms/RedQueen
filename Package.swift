@@ -14,8 +14,12 @@ let package = Package(
             branch: "master"
         ),
         .package(
-            url: "https://github.com/ThiagoHBA/cifra-club-chords-library",
+            url: "https://github.com/ThiagoHBA/cifra-club-chords-library.git",
             branch: "master"
+        ),
+        .package(
+            url: "https://github.com/otavioalbucosta/FolderOrganizer.git",
+            branch: "main"
         ),
     ],
     targets: [
@@ -29,6 +33,10 @@ let package = Package(
                 .product(
                     name: "CifraClubChords",
                     package: "cifra-club-chords-library"
+                ),
+                .product(
+                    name: "FolderOrganizerLib",
+                    package: "FolderOrganizer"
                 ),
             ]
         ),
