@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Password-Generetor",
+        "repositoryURL": "https://github.com/Luizerz/PassGen.git",
+        "state": {
+          "branch": "master",
+          "revision": "f0fbb0b44d2b67fb1f51ade69639f421d6372182",
+          "version": null
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser.git",
+        "state": {
+          "branch": null,
+          "revision": "82905286cc3f0fa8adc4674bf49437cab65a8373",
+          "version": "1.1.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
