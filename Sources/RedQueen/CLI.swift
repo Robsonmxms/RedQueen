@@ -1,5 +1,4 @@
 import Foundation
-import Commands
 
 public class CLI {
     
@@ -9,7 +8,6 @@ public class CLI {
         var isKeepLooping = true
 
         while isKeepLooping{
-            Commands.Bash.system("clear")
             buildingHeader()
             isKeepLooping = isChoosingAutomation()
         }

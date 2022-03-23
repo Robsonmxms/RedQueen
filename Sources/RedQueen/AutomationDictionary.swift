@@ -1,6 +1,6 @@
 import Foundation
-import PassGenLibrary
 
 var chosenAutomation : [Int : AutomationType] = [
-    1 : PassGen()
+    1: CifraClubChords(),
+    2: PassGen()
 ]

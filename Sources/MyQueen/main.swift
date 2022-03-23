@@ -3,3 +3,5 @@ import RedQueen
 
 let program = CLI()
 program.run()
+
+RunLoop.main.run()

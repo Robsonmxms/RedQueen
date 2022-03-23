@@ -13,7 +13,10 @@ let package = Package(
             url: "https://github.com/Luizerz/PassGen.git",
             branch: "master"
         ),
-        .package(url: "https://github.com/QiuZhiFei/swift-commands.git", .upToNextMajor(from: "0.6.0")),
+        .package(
+            url: "https://github.com/ThiagoHBA/cifra-club-chords-library",
+            branch: "master"
+        ),
     ],
     targets: [
         .target(
@@ -24,8 +27,9 @@ let package = Package(
                     package: "PassGen"
                 ),
                 .product(
-                    name: "Commands",
-                    package: "swift-commands")
+                    name: "CifraClubChords",
+                    package: "cifra-club-chords-library"
+                ),
             ]
         ),
         .executableTarget(
