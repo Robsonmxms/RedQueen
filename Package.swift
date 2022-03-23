@@ -5,8 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "RedQueen",
-        products: [
-            .library(name: "RedQueen", targets: ["RedQueen"]),
+    platforms: [.macOS(.v10_12)],
+    products: [
+        .library(name: "RedQueen", targets: ["RedQueen"]),
     ],
     dependencies: [
         .package(

@@ -38,6 +38,15 @@
         }
       },
       {
+        "package": "FolderOrganizer",
+        "repositoryURL": "https://github.com/otavioalbucosta/FolderOrganizer.git",
+        "state": {
+          "branch": "main",
+          "revision": "11bbf773a10de8f551c7f59436f22224b3566244",
+          "version": null
+        }
+      },
+      {
         "package": "Kanna",
         "repositoryURL": "https://github.com/tid-kijyun/Kanna.git",
         "state": {
