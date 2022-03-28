@@ -12,11 +12,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/Luizerz/PassGen.git",
-            branch: "master"
-        ),
-        .package(
-            url: "https://github.com/ThiagoHBA/cifra-club-chords-library.git",
-            branch: "master"
+            from: "1.0.2"
         ),
         .package(
             url: "https://github.com/otavioalbucosta/FolderOrganizer.git",
@@ -30,10 +26,6 @@ let package = Package(
                 .product(
                     name: "PassGen",
                     package: "PassGen"
-                ),
-                .product(
-                    name: "CifraClubChords",
-                    package: "cifra-club-chords-library"
                 ),
                 .product(
                     name: "FolderOrganizerLib",
