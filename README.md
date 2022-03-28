@@ -80,5 +80,11 @@ Red Queen is an automation manager that uses the [Package Manager](https://www.s
 * See the code running:
   ![code](https://user-images.githubusercontent.com/53024020/160408770-10a0fcea-67ce-4206-910d-9d9d499a5d62.gif)
 
+# Getting Started
 
+* Clone the repository at the work terminal:
+
+  ```bash
+  git clone https://github.com/Robsonmxms/RedQueen.git
+  ```
 
