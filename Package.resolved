@@ -2,12 +2,21 @@
   "object": {
     "pins": [
       {
+        "package": "FolderOrganizer",
+        "repositoryURL": "https://github.com/otavioalbucosta/FolderOrganizer.git",
+        "state": {
+          "branch": "main",
+          "revision": "11bbf773a10de8f551c7f59436f22224b3566244",
+          "version": null
+        }
+      },
+      {
         "package": "Password-Generetor",
         "repositoryURL": "https://github.com/Luizerz/PassGen.git",
         "state": {
-          "branch": "master",
-          "revision": "f0fbb0b44d2b67fb1f51ade69639f421d6372182",
-          "version": null
+          "branch": null,
+          "revision": "ddc5963cc99796f73cd329f1f4a7eba8ef52350e",
+          "version": "1.0.2"
         }
       },
       {
@@ -17,15 +26,6 @@
           "branch": null,
           "revision": "82905286cc3f0fa8adc4674bf49437cab65a8373",
           "version": "1.1.1"
-        }
-      },
-      {
-        "package": "swift-commands",
-        "repositoryURL": "https://github.com/QiuZhiFei/swift-commands.git",
-        "state": {
-          "branch": null,
-          "revision": "0883a0383038c41b398945b2e6fd233baaacc394",
-          "version": "0.6.0"
         }
       }
     ]

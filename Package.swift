@@ -5,15 +5,19 @@ import PackageDescription
 
 let package = Package(
     name: "RedQueen",
-        products: [
-            .library(name: "RedQueen", targets: ["RedQueen"]),
+    platforms: [.macOS(.v10_12)],
+    products: [
+        .library(name: "RedQueen", targets: ["RedQueen"]),
     ],
     dependencies: [
         .package(
             url: "https://github.com/Luizerz/PassGen.git",
-            branch: "master"
+            from: "1.0.2"
         ),
-        .package(url: "https://github.com/QiuZhiFei/swift-commands.git", .upToNextMajor(from: "0.6.0")),
+        .package(
+            url: "https://github.com/otavioalbucosta/FolderOrganizer.git",
+            branch: "main"
+        ),
     ],
     targets: [
         .target(
@@ -24,8 +28,9 @@ let package = Package(
                     package: "PassGen"
                 ),
                 .product(
-                    name: "Commands",
-                    package: "swift-commands")
+                    name: "FolderOrganizerLib",
+                    package: "FolderOrganizer"
+                ),
             ]
         ),
         .executableTarget(
