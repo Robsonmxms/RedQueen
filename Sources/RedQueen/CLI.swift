@@ -51,7 +51,7 @@ public class CLI {
         return wasChosen
     }
 
-    func isBuildingAutomation(chosenHeaderOption : Int) -> Bool {
+    func isBuildingAutomation(chosenHeaderOption: Int) -> Bool {
         let chosenOptionAutomation = chosenAutomation[chosenHeaderOption]
         
         if let automationToRun = chosenOptionAutomation{
