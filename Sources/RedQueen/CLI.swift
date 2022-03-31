@@ -13,8 +13,7 @@ public class CLI {
         }
     }
     
-    func buildingHeader()
-    {
+    func buildingHeader(){
         print("""
                 \n\nRed Queen
 
@@ -36,7 +35,7 @@ public class CLI {
         }
     }
 
-    func isChoosingAutomation() -> Bool{
+    func isChoosingAutomation()-> Bool{
         
         let readInput = readLine()
         
@@ -51,7 +50,7 @@ public class CLI {
         return wasChosen
     }
 
-    func isBuildingAutomation(chosenHeaderOption: Int) -> Bool {
+    func isBuildingAutomation(chosenHeaderOption: Int)-> Bool {
         let chosenOptionAutomation = chosenAutomation[chosenHeaderOption]
         
         if let automationToRun = chosenOptionAutomation{
